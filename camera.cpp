@@ -7,7 +7,7 @@
 #include "matrix.h"
 #include "transformation.h"
 
-const Vec3f light_dir = Vec3f(0, 0, -1).normalize();
+const Vec3f light_dir = Vec3f(-1, -1, -1).normalize();
 
 const TGAColor BLACK = TGAColor(0, 0, 0, 255);
 

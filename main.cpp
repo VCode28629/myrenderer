@@ -32,12 +32,15 @@
 // }
 
 int main(int argc, char **argv) {
-    Object obj("obj/african_head.obj", "texture/african_head_diffuse.tga",
+    Object obj1("obj/african_head.obj", "texture/african_head_diffuse.tga",
                Vec3f(0, 0, -1800), Vec3f(400, 400, 400), Vec3f(0.3, 0.3, 0.3));
-    Camera camera(Vec3f(100, -100, 100), Vec3f(0.1, 1, 0.2),
+    Object red_cube("obj/cube.obj", "texture/red.tga",
+               Vec3f(50 + 50, 50, -500), Vec3f(50, 50, 50), Vec3f(0, 0.15, 0));
+    Camera camera(Vec3f(100, -100, 100), Vec3f(-0.1, 1, 0.2),
                   Vec3f(-0.1, 0.1, -1));
     camera.setCurtain(800, 800, 1400);
-    camera.draw(obj);
+    camera.draw(obj1);
+    camera.draw(red_cube);
     camera.save("output.tga");
     return 0;
 }
