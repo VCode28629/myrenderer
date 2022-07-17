@@ -197,8 +197,8 @@ void Camera::draw(Object &obj) {
         for (int j = 0; j < 3; ++j) {
             model_coords[j] = obj.getVert(face[j][0]);
             texture_coords[j] = obj.getTexture(face[j][1]);
-            texture_coords[j][0] *= texture_width;
-            texture_coords[j][1] *= texture_height;
+            texture_coords[j][0] *= texture_width - 1;
+            texture_coords[j][1] *= texture_height - 1;
             normals[j] = obj.getNormal(face[j][2]);
         }
         // triangle_orthogonal_projection(model_coords, texture_coords, normals,
