@@ -3,10 +3,10 @@
 只是用来练手的项目，并不推荐拿去直接使用
 
 借物表：来自 https://github.com/ssloy/tinyrenderer
-`tgaimage.h/.cpp`：几乎完全来自该项目
-`model.h/.cpp` 与 `Makefile`：对内容进行了魔改，使其更方便我个人使用
-`matrix.h`：参考了该项目的接口，但为本人手动实现
-模型文件与材质文件也来自上述仓库
+- `tgaimage.h/.cpp`：几乎完全来自该项目
+- `model.h/.cpp` 与 `Makefile`：对内容进行了魔改，使其更方便我个人使用
+- `matrix.h`：参考了该项目的接口，但为本人手动实现
+- 模型文件与材质文件也来自上述仓库
 
 相关知识点来自GAMES101课程与上述仓库的wiki
 
